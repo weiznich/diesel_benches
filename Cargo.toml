@@ -1,0 +1,21 @@
+[package]
+name = "diesel_bench"
+version = "0.1.0"
+authors = ["Georg Semmler <georg_semmler_05@web.de>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+diesel = {git = "https://github.com/weiznich/diesel", rev = "82be4e1487d09161b9d14b63eff5d9b7c7c7ba2e", features = ["postgres"]}
+
+[dev-dependencies]
+criterion = "0.3"
+
+[[bench]]
+name = "diesel_pg_connection"
+harness = false
+
+
+[patch.crates-io]
+diesel_derives = {git = "https://github.com/weiznich/diesel", rev = "82be4e1487d09161b9d14b63eff5d9b7c7c7ba2e"}
