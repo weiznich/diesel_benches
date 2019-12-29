@@ -8,6 +8,7 @@ edition = "2018"
 
 [dependencies]
 diesel = {git = "https://github.com/weiznich/diesel", rev = "82be4e1487d09161b9d14b63eff5d9b7c7c7ba2e", features = ["postgres"]}
+postgres = "0.17"
 
 [dev-dependencies]
 criterion = "0.3"

@@ -230,6 +230,7 @@ version = "0.1.0"
 dependencies = [
  "criterion 0.3.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "diesel 1.4.3 (git+https://github.com/weiznich/diesel?rev=82be4e1487d09161b9d14b63eff5d9b7c7c7ba2e)",
+ "postgres 0.17.0 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
